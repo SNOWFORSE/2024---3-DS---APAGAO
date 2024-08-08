@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gupter:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+:root {
+    --rosa: #ff006eff;
+    --laranja: #fb5607ff;
+    --amarelo: #ffbe0bff;
+    --verde: #5fad56ff;
+    --azul: #3a86ffff;
+    --violeta: #8338ecff;
+    --fonte-titulo: "Anton", sans-serif;
+    --fonte-texto: "Gupter", serif;
+}
