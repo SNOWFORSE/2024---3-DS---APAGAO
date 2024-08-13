@@ -16,3 +16,13 @@
     --fonte-titulo: "Anton", sans-serif;
     --fonte-texto: "Gupter", serif;
 }
+
+body{
+    background-color: var(--verde);
+    color: var(--violeta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fonte-texto);
+}
