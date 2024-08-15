@@ -8,36 +8,68 @@ const perguntas = [
     {
         enunciado: "texto01",
         alternativas: [
-            "alternativa01",
-            "alternativa02"
+            {
+                texto:"alternativa01",
+                afirmacao:"afirmacao01"
+            },
+            {
+                texto:"alternativa02",
+                afirmacao:"afirmacao02"
+            },
+            
         ]
     },
     {
         enunciado: "texto02",
         alternativas: [
-            "alternativa01",
-            "alternativa02"
+            {
+                texto:"alternativa03",
+                afirmacao:"afirmacao03"
+            },
+            {
+                texto:"alternativa04",
+                afirmacao:"afirmacao04"
+            },
+            
         ]
     },
     {
         enunciado: "texto03",
         alternativas: [
-            "alternativa01",
-            "alternativa02"
+            {
+                texto:"alternativa05",
+                afirmacao:"afirmacao05"
+            },
+            {
+                texto:"alternativa06",
+                afirmacao:"afirmacao06"
+            },
         ]
     },
     {
         enunciado: "texto04",
         alternativas: [
-            "alternativa01",
-            "alternativa02"
+            {
+                texto:"alternativa07",
+                afirmacao:"afirmacao07"
+            },
+            {
+                texto:"alternativa08",
+                afirmacao:"afirmacao08"
+            },
         ]
     },
     {
         enunciado: "texto05",
         alternativas: [
-            "alternativa01",
-            "alternativa02"
+            {
+                texto:"alternativa09",
+                afirmacao:"afirmacao09"
+            },
+            {
+                texto:"alternativa10",
+                afirmacao:"afirmacao10"
+            },
         ]
     }
 ]
@@ -52,10 +84,14 @@ function mostraPergunta(){
 }
 
 function mostraAlternativas(){
-    for( const alternativa of perguntaAtual.alternativa){
+    for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa;
-        caixaAlternativa.appendChild(botaoAlternativas);
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener('click',function(){
+            atual++;            
+            mostraPergunta()
+        })
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 mostraPergunta();
