@@ -6,69 +6,69 @@ const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
     {
-        enunciado: "texto01",
+        enunciado: "Ao chegar à mansão, você se depara com duas portas: uma à esquerda e outra à direita. Qual delas você escolhe?",
         alternativas: [
             {
-                texto:"alternativa01",
-                afirmacao:"afirmacao01"
+                texto:"A porta à esquerda, que está um pouco enferrujada e tem um brilho esverdeado.",
+                afirmacao:"Você abre a porta enferrujada e entra em um corredor escuro e úmido, levando a uma sala grande com móveis cobertos de poeira e um grande espelho na parede."
             },
             {
-                texto:"alternativa02",
-                afirmacao:"afirmacao02"
+                texto:"A porta à direita, que está bem conservada e tem símbolos antigos gravados nela.",
+                afirmacao:"Você abre a porta com símbolos antigos e entra em uma biblioteca antiga, cheia de livros empoeirados. Há uma mesa com um livro aberto e uma vela acesa."
             },
             
         ]
     },
     {
-        enunciado: "texto02",
+        enunciado: "O que você faz?",
         alternativas: [
             {
-                texto:"alternativa03",
-                afirmacao:"afirmacao03"
+                texto:"Examina o livro aberto e nota que contém anotações sobre um ritual antigo.",
+                afirmacao:"Você toca o espelho, e ele se move, revelando uma passagem secreta. A passagem leva a uma sala escondida com um cofre antigo."
             },
             {
-                texto:"alternativa04",
-                afirmacao:"afirmacao04"
+                texto:"Procura outros livros na biblioteca que possam conter informações adicionais.",
+                afirmacao:"O livro contém detalhes sobre um ritual antigo e um mapa da mansão com anotações criptografadas."
             },
             
         ]
     },
     {
-        enunciado: "texto03",
+        enunciado: "O que você faz com o cofre?",
         alternativas: [
             {
-                texto:"alternativa05",
-                afirmacao:"afirmacao05"
+                texto:"Tenta abrir o cofre imediatamente.",
+                afirmacao:"O cofre está trancado por um mecanismo complexo. Após várias tentativas, você descobre que o cofre está vazio, mas encontra um mapa antigo no fundo."
             },
             {
-                texto:"alternativa06",
-                afirmacao:"afirmacao06"
+                texto:"Procura pistas na sala que possam ajudar a abrir o cofre.",
+                afirmacao:"Você descifra o mapa e encontra uma localização secreta na mansão. Descobre um altar antigo com objetos místicos."
             },
         ]
     },
     {
-        enunciado: "texto04",
+        enunciado: "O que você faz com o mapa?",
         alternativas: [
             {
-                texto:"alternativa07",
-                afirmacao:"afirmacao07"
+                texto:"Segue o mapa para explorar o novo local indicado.",
+                afirmacao:"Você encontra uma carta antiga com um código para o cofre e consegue abri-lo. Dentro, há um diário que detalha a história da mansão."
             },
             {
-                texto:"alternativa08",
-                afirmacao:"afirmacao08"
+                texto:"Decide levar o mapa de volta para estudar com mais calma em um lugar seguro.",
+                afirmacao:"Você encontra um livro raro com informações detalhadas sobre a mansão e seus antigos proprietários."
             },
         ]
     },
     {
-        enunciado: "texto05",
+        enunciado: "O que você faz com o diário?",
         alternativas: [
             {
-                texto:"alternativa09",
-                afirmacao:"afirmacao09"
+                texto:"Lê o diário para entender a história da mansão e suas sombras.",
+                afirmacao:"Fim."
             },
             {
-                texto:"alternativa10",
-                afirmacao:"afirmacao10"
+                texto:"Leva o diário de volta para consultar especialistas e obter uma análise detalhada.",
+                afirmacao:"Fim."
             },
         ]
     }
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Inicio do Texto..."
+    caixaPerguntas.textContent = "O Mapa e o Novo Mistério"
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
